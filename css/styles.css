@@ -1,7 +1,7 @@
-body{
+#body{
     width: 1560px;
     height: 720px;
-    background: #FAFAFA 0% 0% no-repeat padding-box;
+    background-color: #FAFAFA;
 }
 .image{
     top: 72px;
@@ -55,6 +55,7 @@ body{
 }
 .login{
     float: none;
+    display: grid;
 }
 input[type=text], input[type=password] { 
     width: 429px;

@@ -3,22 +3,47 @@
     <head>
         <title>Dashboard Page</title>
         <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
     </head>
-    <body>
+    <body id="body">
         <div class="topbar">
             <img class="menuimg" src="img/menu-bar.svg">
             <img class="headerlogo" src="img/header-logo.svg">
             <img class="searchicon" src="img/search-icon.svg" height="16px" width="16px">
-            <p class="searchtext">Search</p>
+            <input type="text" placeholder="Search" name="Search" class="searchtext">
             <img class="notification" src="img/notification-icon.svg">
             <img class="profile"src="img/profile.png">
             <p class="name">John Doe</p>
             <img class="downarrow" src="img/downward-arrow.svg">
         </div>
         <div class="sidebar">
-            <div class="dashboard">
-                <img src="img/dashboard-default.svg">
-                <p>Dashboard</p>
+            <div class="sidebar-menu selected-item">
+                <img class="active-menu"src="./img/dashboard-active.svg">
+                <span>Dashboard</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="graph"src="./img/graph-default.svg">
+                <span>Analysis</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="inbox"src="./img/inbox-default.svg">
+                <span>Inbox</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="history"src="./img/clock-default.svg">
+                <span>History</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="user"src="./img/user-default.svg">
+                <span>Users</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="maintenance"src="./img/maintenance-default.svg">
+                <span>Maintenance</span>
+            </div>
+            <div class="sidebar-menu">
+                <img class="setting"src="./img/setting-default.svg">
+                <span>Setting</span>
             </div>
         </div>
     </body>
