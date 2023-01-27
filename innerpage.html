@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang=en-us>
+    <head>
+        <title>Analysis Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+    <body id="dashboardbody">
+        <div class="container-fluid">
+            <div class="topbar">
+                <img class="menuimg" src="img/menu-bar.svg">
+                <img class="headerlogo" src="img/header-logo.svg">
+                <img class="searchicon" src="img/search-icon.svg" height="16px" width="16px">
+                <input type="text" placeholder="Search" name="Search" class="searchtext">
+                <img class="notification" src="img/notification-icon.svg">
+                <img class="profile"src="img/profile.png">
+                <p class="name">John Doe</p>
+                <img class="downarrow" src="img/downward-arrow.svg">
+            </div>
+            <div class="row">
+                <div class="sidebar">
+                    <div class="sidebar-menu selected-item">
+                        <img class="active-menu"src="./img/dashboard-active.svg">
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="graph"src="./img/graph-default.svg">
+                        <span>Analysis</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="inbox"src="./img/inbox-default.svg">
+                        <span>Inbox</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="history"src="./img/clock-default.svg">
+                        <span>History</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="user"src="./img/user-default.svg">
+                        <span>Users</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="maintenance"src="./img/maintenance-default.svg">
+                        <span>Maintenance</span>
+                    </div>
+                    <div class="sidebar-menu">
+                        <img class="setting"src="./img/setting-default.svg">
+                        <span>Setting</span>
+                    </div>
+                </div>
+                <div class="col main-content">
+                    <div class="d-sm-flex justify-content-between mb-4">
+                        <h1 class="h3 mb-0">Analysis</h1>
+                    </div>
+                    <div class="formarea">
+                        <label class="one-column">One Column</label>
+                        <form>
+                            <input type="nametext" id="name" name="name" placeholder="Name">
+                            <select id="dropdown">
+                                <option value="">Dropdown</option>
+                            </select>
+                            <textarea id="multiple-line" placeholder="Multiple Line" rows="4" type="textarea"></textarea>
+                        </form>
+                        <label class="two-column">Two Column</label>
+                        <div class="twoform">
+                            <input type="nametext" id="twoform" name="name" placeholder="Name">
+                            <input type="nametext" id="twoform" name="name" placeholder="johndoe">
+                        </div>
+                        <div class="twoform">
+                            <input type="nametext" id="twoform" name="name" placeholder="Password">
+                            <select id="twoformdropdown">
+                                <option value="">Dropdown</option>
+                            </select>
+                        </div>
+                        <label class="three-column">Three Column</label>
+                        <div class="threeform">
+                            <input type="nametext" id="focused" name="name" placeholder="|">
+                            <input type="nametext" id="threeform" name="name" placeholder=" • • • • • • • •">
+                            <input type="nametext" disabled="disabled" id="disabled" name="name" placeholder="johndoe">
+                        </div>
+                        <label class="four-column">Four Column</label>
+                        <div class="fourform">
+                            <input type="nametext" id="fourfocused" name="name" placeholder="Ui Designer">
+                            <input type="nametext" id="fourform" name="name" placeholder="Name">
+                            <input type="nametext" id="fourform" name="name" placeholder="johndoe">
+                            <select id="fourform">
+                                <option value="">Dropdown</option>
+                            </select>
+                        </div>
+                        <spam class="fourcolumntext1">Enter Valid data</spam>
+                        <spam class="fourcolumntext2">Enter your full Name as per ID</spam>
+                        <p id="other">Other Design Elements</p>
+                        <p id="file-upload">File Upload</p>
+                        <div class="upload">
+                            <div class="upload-btn">
+                                <img src="./img/cloud-upload-icon.svg">Upload
+                                <!-- <input type="file" name="myfile" /> -->
+                            </div>
+                            <span class="uploadtext">No item Selected</span>
+                        </div>
+                        <label class="radio">Radio Button</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
