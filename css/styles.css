@@ -807,7 +807,7 @@ a.active {
     }
     .image{
         float: none;
-        left: 50px;
+        left: 100px;
         top:10px;
         width: 200px;
         height: 200px;
@@ -819,7 +819,7 @@ a.active {
     .container{
         top:70px;
         position: relative;
-        left: 20px;
+        left: 50px;
     }
     .tagline{
         font-size: 20px;
@@ -830,7 +830,7 @@ a.active {
         font-size: 20px;
     }
     .login input[type=text], input[type=password] {
-        width: 250px;
+        width: 260px;
         height:40px;
     }
     .loginInfo{
