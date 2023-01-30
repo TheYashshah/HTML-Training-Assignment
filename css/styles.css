@@ -752,7 +752,7 @@ a.active {
 
 @media screen and (max-width: 1024px){
     #body{
-        width: 100%;
+        width: 90%;
     }
     .image{
         left: 20px;
@@ -778,13 +778,13 @@ a.active {
         width: 90%;
     }
     .image{
-        left: 10px;
+        left: 20px;
         width: 300px;
         height: 300px;
         background: transparent url(../img/hero-image.png) 30% 0% no-repeat padding-box;
     }
     .container{
-        left: 380px;
+        left: 370px;
         top:90px;
     }
     .header-logo {
@@ -807,7 +807,7 @@ a.active {
     }
     .image{
         float: none;
-        left: 100px;
+        left: 90px;
         top:10px;
         width: 200px;
         height: 200px;
@@ -855,10 +855,51 @@ a.active {
     #body{
         width: 90%;
     }
+    .image{
+        float: none;
+        left: 80px;
+        top:10px;
+        width: 170px;
+        height: 170px;
+        background: transparent url(../img/hero-image.png) 50% 20% no-repeat padding-box;
+    }
+    .header-logo{
+        margin-left: -10px;
+    }
+    .container{
+        top:50px;
+        position: relative;
+        left: 50px;
+    }
+    .tagline{
+        font-size: 16px;
+        width: 260px;
+        margin-bottom: 10px;
+    }
+    .tagline span{
+        font-size: 16px;
+    }
+    .login input[type=text], input[type=password] {
+        width: 200px;
+        height:30px;
+        font-size: 10px;
+    }
     .loginInfo{
-        font-size: 17px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    button{
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
     }
     .register{
         font-size: 12px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .loginbtn a {
+        font-size: 10px;
+        left: 50px;
     }
 }
