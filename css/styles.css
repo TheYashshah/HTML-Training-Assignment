@@ -807,8 +807,11 @@ a.active {
     }
     .image{
         float: none;
-        left: 100px;
-        top:10px
+        left: 50px;
+        top:10px;
+        width: 200px;
+        height: 200px;
+        background: transparent url(../img/hero-image.png) 40% 0% no-repeat padding-box;
     }
     .header-logo{
         margin-left: -10px;
@@ -816,10 +819,36 @@ a.active {
     .container{
         top:70px;
         position: relative;
-        left: 50px;
+        left: 20px;
     }
-    .tagline,.tagline span{
-        font-size: 30px;
+    .tagline{
+        font-size: 20px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .tagline span{
+        font-size: 20px;
+    }
+    .login input[type=text], input[type=password] {
+        width: 250px;
+        height:40px;
+    }
+    .loginInfo{
+        font-size: 15px;
+    }
+    button{
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .register{
+        font-size: 12px;
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .loginbtn a {
+        font-size: 15px;
+        left: 70px;
     }
 }
 @media screen and (max-width:360px){
