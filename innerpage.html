@@ -8,8 +8,8 @@
     </head>
     <body id="dashboardbody">
         <div class="container-fluid">
-            <div class="topbar">
-                <img class="menuimg" src="img/menu-bar.svg">
+            <div class="topbar" id="topmenubar">
+                <img class="menuimg" onclick="showMenu()" src="img/menu-bar.svg">
                 <img class="headerlogo" src="img/header-logo.svg">
                 <img class="searchicon" src="img/search-icon.svg" height="16px" width="16px">
                 <input class="searchtext" type="text" placeholder="Search"/>
@@ -18,8 +18,8 @@
                 <p class="name">John Doe</p>
                 <img class="downarrow" src="img/downward-arrow.svg">
             </div>
-            <div class="row">
-                <div class="sidebar">
+            <div class="row" id="dashboardmenu">
+                <div class="sidebar" id="navigationmenu">
                     <div class="sidebar-menu">
                         <img class="active-menu"src="./img/dashboard-active.svg">
                         <span>Dashboard</span>
@@ -49,7 +49,7 @@
                         <span>Setting</span>
                     </div>
                 </div>
-                <div class="col main-content">
+                <div class="col main-content-innerpage">
                     <div class="d-sm-flex justify-content-between mb-4">
                         <h1 class="h3 mb-0">Analysis</h1>
                     </div>
@@ -179,3 +179,21 @@
         </div>
     </body>
 </html>
+
+
+
+
+<script>
+    const sideNavMenu = document.getElementById("navigationmenu");
+    function showMenu(){
+        if(sideNavMenu.style.display != "none"){
+            sideNavMenu.style.display = "none";
+            document.getElementById("dashboardmenu").style.gridTemplateColumns = "auto";
+        }   
+        else{
+            sideNavMenu.style.display = "block";
+            document.getElementById("topmenubar").style.width = "100vw"
+            document.getElementById("dashboardmenu").style.gridTemplateColumns = "auto auto";
+        }
+    }
+</script>

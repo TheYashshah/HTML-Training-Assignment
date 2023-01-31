@@ -202,7 +202,7 @@ button{
     position: relative;
     top: 80px;
     width: 180px;
-    height: 1279px;
+    height: auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 .sidebar-menu {
@@ -214,6 +214,9 @@ button{
     font: 15px Roboto;
     padding-left: 20px;
     display: flex;
+}
+.sidebar-menu span{
+    color: #000000;
 }
 .selected-item{
     background: #fff3f4 0% 0% no-repeat padding-box;
@@ -273,6 +276,7 @@ button{
     width: 146px;
     height: 39px;
     text-align: left;
+    margin-left: 20px;
 }
 .headingNo{
     font: normal normal medium 25px/33px Roboto;
@@ -446,6 +450,14 @@ td{
 
 
 /* innerpage */
+.main-content-innerpage{
+    position: relative;
+    top: 121px;
+    width: 150px;
+    height: 39px;
+    text-align: left;
+    margin-left: 20px;
+}
 .formarea{
     top: 182px;
     left: 292px;
@@ -1114,5 +1126,8 @@ a.active {
         display: none;
     }
 }
+
+
+
 
 

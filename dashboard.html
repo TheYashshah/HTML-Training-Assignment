@@ -8,8 +8,8 @@
     </head>
     <body id="dashboardbody">
         <div class="container-fluid">
-            <div class="topbar">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="menuimg" src="img/menu-bar.svg"></a>
+            <div class="topbar" id="topmenubar">
+                <img class="menuimg" id="sidebarCollapse" onclick="showMenu()" src="img/menu-bar.svg">
                 <img class="headerlogo" src="img/header-logo.svg">
                 <img class="searchicon" src="img/search-icon.svg" height="16px" width="16px">
                 <input class="searchtext" type="text" placeholder="Search"/>
@@ -18,36 +18,36 @@
                 <p class="name">John Doe</p>
                 <img class="downarrow" src="img/downward-arrow.svg">
             </div>
-            <div class="row">
+            <div class="row" id="dashboardmenu">
                 <div class="sidebar" id="navigationmenu">
-                    <a class="sidebar-menu selected-item">
+                    <a href="#" class="sidebar-menu selected-item">
                         <img class="active-menu"src="./img/dashboard-active.svg">
                         <span>Dashboard</span>
                     </a>
-                    <div class="sidebar-menu">
+                    <a href="#" class="sidebar-menu">
                         <img class="graph"src="./img/graph-default.svg">
                         <span>Analysis</span>
-                    </div>
-                    <div class="sidebar-menu">
+                    </a>
+                    <a href="#" class="sidebar-menu">
                         <img class="inbox"src="./img/inbox-default.svg">
                         <span>Inbox</span>
-                    </div>
-                    <div class="sidebar-menu">
+                    </a>
+                    <a href="#" class="sidebar-menu">
                         <img class="history"src="./img/clock-default.svg">
                         <span>History</span>
-                    </div>
-                    <div class="sidebar-menu">
+                    </a>
+                    <a href="#" class="sidebar-menu">
                         <img class="user"src="./img/user-default.svg">
                         <span>Users</span>
-                    </div>
-                    <div class="sidebar-menu">
+                    </a>
+                    <a href="#" class="sidebar-menu">
                         <img class="maintenance"src="./img/maintenance-default.svg">
                         <span>Maintenance</span>
-                    </div>
-                    <div class="sidebar-menu">
+                    </a>
+                    <a href="#" class="sidebar-menu">
                         <img class="setting"src="./img/setting-default.svg">
                         <span>Setting</span>
-                    </div>
+                    </a>
                 </div>
                 <div class="col main-content">
                     <div class="d-sm-flex justify-content-between mb-4">
@@ -284,3 +284,19 @@
         </div>
     </body>
 </html>
+
+
+<script>
+    const sideNavMenu = document.getElementById("navigationmenu");
+    function showMenu(){
+        if(sideNavMenu.style.display != "none"){
+            sideNavMenu.style.display = "none";
+            document.getElementById("dashboardmenu").style.gridTemplateColumns = "auto";
+        }   
+        else{
+            sideNavMenu.style.display = "block";
+            document.getElementById("topmenubar").style.width = "100vw"
+            document.getElementById("dashboardmenu").style.gridTemplateColumns = "auto auto";
+        }
+    }
+</script>
