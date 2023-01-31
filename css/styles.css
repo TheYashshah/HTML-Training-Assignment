@@ -1043,14 +1043,15 @@ a.active {
     }
     .image{
         float: none;
-        left: 80px;
+        left: 50px;
         top:10px;
-        width: 170px;
-        height: 170px;
+        width: 200px;
+        height: 200px;
         background: transparent url(../img/hero-image.png) 50% 20% no-repeat padding-box;
     }
     .header-logo{
         margin-left: -10px;
+        margin-top: -40px;
     }
     .container{
         top:50px;
@@ -1058,7 +1059,8 @@ a.active {
         left: 50px;
     }
     .tagline{
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: -50px;
         width: 260px;
         margin-bottom: 10px;
     }
@@ -1066,18 +1068,18 @@ a.active {
         font-size: 16px;
     }
     .login input[type=text], input[type=password] {
-        width: 200px;
-        height:30px;
-        font-size: 10px;
+        width: 230px;
+        height:50px;
+        font-size: 12px;
     }
     .loginInfo{
         font-size: 15px;
         margin-bottom: 10px;
     }
     button{
-        width: 50px;
-        height: 20px;
-        font-size: 10px;
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
     }
     .register{
         font-size: 12px;
