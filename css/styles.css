@@ -1088,6 +1088,9 @@ a.active {
         font-size: 10px;
         left: 50px;
     }
+    .searchicon{
+        margin-left: 30px;
+    }
     .chart-area img{
         width: 200px;
         height: auto;
