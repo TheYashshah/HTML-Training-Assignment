@@ -235,7 +235,7 @@ button{
     height: 16px;
     margin-right: 13px;
 }
-.inbox{
+.inbox,.dashboardsvg{
     top: 225px;
     left: 48px;
     width: 16px;
@@ -453,7 +453,7 @@ td{
 .main-content-innerpage{
     position: relative;
     top: 121px;
-    width: 150px;
+    width: 130px;
     height: 39px;
     text-align: left;
     margin-left: 20px;
@@ -461,8 +461,8 @@ td{
 .formarea{
     top: 182px;
     left: 292px;
-    width: 1218px;
-    height: 1749px;
+    width: 1000px;
+    height: auto;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     padding: 20px 20px;
@@ -478,7 +478,7 @@ td{
     color: #3E3E3E;
 }
 #name{
-    width: 1157px;
+    width: 80%;
     height: 49px;
     border: 1px solid #ADADAD;
     border-radius: 5px;
@@ -490,14 +490,14 @@ input[type=textarea]{
     padding-left: 10px;
 }
 #dropdown{
-    width: 1157px;
+    width: 80%;
     height: 49px;
     border: 1px solid #ADADAD;
     border-radius: 5px;
     margin-top: 21px;
 }
 #multiple-line{
-    width: 1157px;
+    width: 80%;
     border: 1px solid #ADADAD;
     border-radius: 5px;
     margin-top: 21px;
@@ -533,7 +533,7 @@ input[type=textarea]{
     color: #3E3E3E;
 }
 #threeform{
-    width: 364px;
+    width: 300px;
     height: 47px;
     border: 1px solid #ADADAD;
     border-radius: 5px;
@@ -541,14 +541,15 @@ input[type=textarea]{
 }
 #focused{
     border: 1px solid #C8242F;
-    width: 364px;
+    width: 300px;
     height: 47px;
     margin-right: 20px;
     border-radius: 5px;
 }
 #disabled{
-    width: 364px;
+    width: 300px;
     height: 47px;
+    margin-top: 10px;
     border: 1px dashed #ADADAD;
     border-radius: 5px; 
 }
@@ -560,17 +561,18 @@ input[type=textarea]{
 }
 #fourfocused{
     border: 1px solid #C8242F;
-    width: 266px;
+    width: 200px;
     height: 47px;
     border-radius: 5px;
     margin-right: 25px;
 }
 #fourform{
-    width: 266px;
+    width: 200px;
     height: 47px;
     border: 1px solid #ADADAD;
     border-radius: 5px;
     margin-right: 25px;
+    margin-top: 10px;
 }
 .fourcolumntext1{
     color: #FF3B3B;
@@ -797,10 +799,16 @@ a.active {
     .newcard{
         width: 720px;
     }
+    .formarea{
+        width: 900px;
+    }
 }
 @media screen and (max-width:1150px){
     .notification{
         margin-left: 300px;
+    }
+    .formarea{
+        width: 780px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -840,6 +848,12 @@ a.active {
     td{
         font-size: 12px;
     }
+    .formarea{
+        width: 880px;
+    }
+    .fourcolumntext2{
+        margin-left: 100px;
+    }
 }
 @media screen and (max-width: 915px){
     .notification{
@@ -847,6 +861,9 @@ a.active {
     }
     .profile{
         margin-left: 15px;
+    }
+    .formarea{
+        width: 700px;
     }
 }
 @media screen and (max-width: 768px){
@@ -898,15 +915,49 @@ a.active {
         height: auto;
         width: 90%;
     }
-    /* th{
-        font-size: 10px;
+    .formarea{
+        width: 600px;
     }
-    td{
-        font-size: 8px;
-    } */
+    #twoform,#twoformdropdown{
+        width: 350px;
+    }
+    #focused,#threeform,#disabled{
+        width: 200px;
+    }
+    .snackbar_btn1,.snackbar_btn2,.snackbar_btn3,.snackbar_btn4{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width:700px){
     .searchicon{
+        margin-left: 10px;
+    }
+    .formarea{
+        width: 550px;
+    }
+    #twoform,#twoformdropdown{
+        width: 300px;
+    }
+    #focused,#threeform,#disabled{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    #fourform,#fourfocused{
+        width: 300px;
+    }
+    #snackbar{
+        flex: none;
+        display: block;
+    }
+    .snackbar_btn1,.snackbar_btn2,.snackbar_btn3,.snackbar_btn4{
+        font-size: 15px;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .fourcolumntext1{
+        margin-left: 10px;
+    }
+    .fourcolumntext2{
         margin-left: 10px;
     }
 }
@@ -950,6 +1001,15 @@ a.active {
     }
     .piechartcard {
         width: 200px;
+    }
+    .formarea{
+        width: 430px;
+    }
+    #twoform,#twoformdropdown{
+        width: 300px;
+    }
+    #focused,#threeform,#disabled{
+        width: 300px;
     }
 }
 @media screen and (max-width:480px){
@@ -1040,6 +1100,35 @@ a.active {
     .invoicetitle{
         font-size: 20px;
     }
+    .formarea{
+        width: 350px;
+    }
+    #twoform,#twoformdropdown{
+        width: 200px;
+    }
+    #focused,#threeform,#disabled{
+        width: 200px;
+    }
+    #fourform,#fourfocused{
+        width: 200px;
+    }
+    .fourcolumntext1,.fourcolumntext2,.uploadtext{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .snackbar_btn1,.snackbar_btn2,.snackbar_btn3,.snackbar_btn4{
+        font-size: 10px
+    }
+    .primarybtn{
+        width: 100px;
+        height: 40px;
+        /* margin-right: 20px; */
+        /* margin-bottom: 10px; */
+    }
+    .secondarybtn{
+        width: 100px;
+        height: 40px;
+    }
 }
 @media screen and (max-width:400px){
     .piecard{
@@ -1047,6 +1136,9 @@ a.active {
     }
     .piechartcard {
         width: 100px !important;
+    }
+    .formarea{
+        width: 300px;
     }
 }
 @media screen and (max-width:360px){
@@ -1124,6 +1216,38 @@ a.active {
     }
     .name{
         display: none;
+    }
+    .formarea{
+        width: 250px;
+    }
+    .option_1,.option_2{
+        font-size: 15px;
+    }
+    #twoform,#twoformdropdown{
+        width: 200px;
+    }
+    #focused,#threeform,#disabled{
+        width: 200px;
+    }
+    #fourform,#fourfocused{
+        width: 200px;
+    }
+    .fourcolumntext1,.fourcolumntext2,.uploadtext{
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .snackbar_btn1,.snackbar_btn2,.snackbar_btn3,.snackbar_btn4{
+        font-size: 10px
+    }
+    .primarybtn{
+        width: 100px;
+        height: 40px;
+        /* margin-right: 20px; */
+        margin-bottom: 10px;
+    }
+    .secondarybtn{
+        width: 100px;
+        height: 40px;
     }
 }
 
