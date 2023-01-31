@@ -9,21 +9,21 @@
     <body id="dashboardbody">
         <div class="container-fluid">
             <div class="topbar">
-                <img class="menuimg" src="img/menu-bar.svg">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img class="menuimg" src="img/menu-bar.svg"></a>
                 <img class="headerlogo" src="img/header-logo.svg">
                 <img class="searchicon" src="img/search-icon.svg" height="16px" width="16px">
-                <p class="searchtext">Search</p>
+                <input class="searchtext" type="text" placeholder="Search"/>
                 <img class="notification" src="img/notification-icon.svg">
                 <img class="profile"src="img/profile.png">
                 <p class="name">John Doe</p>
                 <img class="downarrow" src="img/downward-arrow.svg">
             </div>
             <div class="row">
-                <div class="sidebar">
-                    <div class="sidebar-menu selected-item">
+                <div class="sidebar" id="navigationmenu">
+                    <a class="sidebar-menu selected-item">
                         <img class="active-menu"src="./img/dashboard-active.svg">
                         <span>Dashboard</span>
-                    </div>
+                    </a>
                     <div class="sidebar-menu">
                         <img class="graph"src="./img/graph-default.svg">
                         <span>Analysis</span>
@@ -61,7 +61,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
+                                    <div class="row no-gutters">
                                         <img class="star_img" src="./img/star.svg"/>
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold headingNo text-uppercase mb-1">
@@ -77,7 +77,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
+                                    <div class="row no-gutters">
                                         <img class="new-product" src="./img/new-product.svg"/>
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold headingNo text-uppercase mb-1">
@@ -93,7 +93,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
+                                    <div class="row no-gutters">
                                         <img class="total-product" src="./img/total-product.svg"/>
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold headingNo text-uppercase mb-1">
@@ -108,7 +108,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
+                                    <div class="row no-gutters">
                                         <img class="dollar-filled" src="./img/dollar-filled.svg"/>
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold headingNo text-uppercase mb-1">
@@ -124,7 +124,7 @@
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
+                                    <div class="row no-gutters">
                                         <img class="money-bag" src="./img/money-bag.svg"/>
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold headingNo text-uppercase mb-1">
@@ -138,11 +138,11 @@
                     </div>
                     <!-- Content Row -->
 
-                    <div class="row">
+                    <div class="newrow">
 
                         <!-- Area Chart -->
                         <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
+                            <div class="newcard shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -163,8 +163,8 @@
                         </div>
 
                         <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
+                        <div class="col-xl-4 col-lg-5 piechartcard">
+                            <div class="piecard shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
