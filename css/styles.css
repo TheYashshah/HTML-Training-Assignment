@@ -1070,6 +1070,9 @@ a.active {
     .searchtext{
         display: none;
     }
+    .notification{
+        margin-left: 15px;
+    }
     .chart-area img{
         width: 250px;
         height: auto;
